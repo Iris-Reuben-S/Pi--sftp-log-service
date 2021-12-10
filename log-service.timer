@@ -1,0 +1,11 @@
+[Unit]
+Description=run logging at intervals
+
+[Timer]
+Unit=log-service.service
+OnUnitActiveSec=5min
+OnBootSec=10s
+
+
+[Install]
+WantedBy=timers.target

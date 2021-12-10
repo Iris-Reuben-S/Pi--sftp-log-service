@@ -1,0 +1,11 @@
+[Unit]
+Description=My service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/log-service
+User=pi
+#Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
